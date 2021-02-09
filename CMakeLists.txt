@@ -30,7 +30,7 @@ target_link_directories(${PROJECT_NAME} PUBLIC ${NLOHMANN_JSON_PATH})
 # Include curl
 target_link_directories(${PROJECT_NAME} PUBLIC ${CURL_INCLUDE_PATH})
 
-# TODO: Add automatic generation of libcurl
+# TODO (#13): Add automatic generation of libcurl
 if(WIN32)
     target_link_libraries(${PROJECT_NAME} PUBLIC INTERFACE "${CURL_LIB_PATH}/libcurl.lib")
 endif()

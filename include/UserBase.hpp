@@ -479,10 +479,10 @@ protected:
     /**
      * @brief  Get the URL to the captcha.
      * @param  parametersData: the parameters data which was sent in the previous request.
-     * @param  answerData: the answer which was received in the previous request.
+     * @param  response: the answer which was received in the previous request.
      * @retval the URL to the captcha.
      */
-    std::string GetURLCaptcha(json& parametersData, const json& answerData);
+    std::string GetURLCaptcha(json& parametersData, const json& response);
 
 private:
     const std::string appId_;
